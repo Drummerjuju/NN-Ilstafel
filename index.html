@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vier URLs Splitscreen</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* zwei Spalten */
+            grid-template-rows: 1fr 1fr;    /* zwei Reihen */
+            height: 100vh;
+            width: 100vw;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://emergencydispatch.de/alarmmonitor/?s=2343&amp;j=feuerwehr&amp;d=Berufsfeuerwehr%20%5BFeuerwehr%5D&amp;j2=ambulance&amp;d2=Berufsfeuerwehr%20%5BRettungsdienst%5D&amp;status=26"></iframe>
+        <iframe src="https://emergencydispatch.de/leitstelle-infotainment/?s=2343&amp;j=rglst"></iframe>
+        <iframe src="https://emergencydispatch.de/leitstellenkarte/?s=2343&amp;j=rglst"></iframe>
+        <iframe src="https://emergencydispatch.de/ehrenamt/?s=2343&j=rglst"></iframe>
+    </div>
+</body>
+</html>
